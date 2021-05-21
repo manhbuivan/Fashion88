@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  
+  body {
+    font-family: Gotham ;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  @font-face {
+      font-family: Gotham ;
+      src: url(/assets/fonts/gothamhtf-book-webfont.ttf);
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .header{
+    height: 123vh;
+    background: url(../images/1.jpg) no-repeat;
+    background-size: contain;
+    position: relative;
+    .__header{
+        .menu{
+            padding-top: 167px;
+            padding-left: 52px;
+            ul{
+                list-style: none;
+                li{
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    font-weight: 600;
+                    line-height: 3.0;
+                }
+            }
+        }
+        .text{
+            font-size: 70px;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: absolute;
+            top: 40%;
+            left: 30%;
+        }
+    }
+  }
+
+  .content{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .item{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:first-child{
+              background: url(../images/2.jpg) no-repeat;
+              background-size: cover;
+              height: 103vh;
+          }
+          &:last-child{
+            background: url(../images/3.jpg) no-repeat;
+            background-size: cover;
+            height: 103vh;
+        }
+        h2{
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;text-align: center;
+        }
+        p{
+            padding-left: 40px;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 600;
+        }
+      }
+  }
+  .tags{
+      .text {
+          padding: 10px 0;
+          text-align: center;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: 600;
+      }
+      .images{
+         display: flex;
+         .item{
+             img{
+                 height: 290px;
+                 width: 100%;
+                 object-fit: cover;
+             }
+         }
+      }
+  }
+  .footer{
+      margin-top: 46px;
+      .footer-top{
+          display: flex;
+          justify-content: space-between;
+          .left{
+            width: 50%;
+            padding-left: 95px;
+            h3{
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding-bottom: 5px;
+            }
+            form{
+                .input{
+                    width: 487px;
+                    height: 45px;
+                    margin-bottom: 25px;
+                    border: 1px solid #000;
+                }
+                button{
+                    border: 2px solid #262626;
+                    height: 45px;
+                    width: 45px;
+                    background-color: #000;
+                    color: #fff;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+            .social{
+                margin-left: -15px;
+                ul{
+                    list-style: none;
+                    li{
+                        display: inline-block;
+                        padding-left: 30px;
+                        font-size: 30px;
+                    }
+                }
+            }
+          }
+          .right{
+              width: 21%;
+              padding-right: 95px;
+              .one{
+                  font-size: 18px;
+                  font-weight: 600;
+                  text-transform: uppercase;
+              }
+              p{
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 600;
+              }
+          }
+      }
+      .footer-bot{
+          text-align: center;
+          margin-top: 80px;
+          font-size: 11px;
+          ul{
+              list-style: none;
+              li{
+                  display: inline-block;
+                  padding-left: 15px;
+                  position: relative;
+                  &:first-child{
+                    &::before{
+                        content: '';
+                        height: 12px;
+                        width: 1px;
+                        background-color: #fff;
+                        position: absolute;
+                        left: 7px;
+                      }
+                  }
+                  &::before{
+                    content: '';
+                    height: 12px;
+                    width: 1px;
+                    background-color: #7f7f7f;
+                    position: absolute;
+                    left: 7px;
+                  }
+              }
+          }
+      }
+  }
